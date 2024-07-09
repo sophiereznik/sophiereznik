@@ -48,3 +48,29 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+#splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #a4ac86;
+    color: #fff;
+    text-align: center;
+}
+
+#splash h1 {
+    margin-bottom: 20px;
+}
+
+#splash button {
+    padding: 5px 20px;
+    background: #fff;
+    color: #a4ac86;
+    border: none;
+    cursor: pointer;
+}
+
+#splash button:hover {
+    background: #ccc;
+}

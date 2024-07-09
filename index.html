@@ -7,47 +7,60 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Sophie Reznik</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a rising junior studying Computer Science with a minor in Information Technology 
-                at the University of Minnesota-Twin Cities.</p>
-            <p>Currently, I am a member of the Society of Women Engineers (SWE) as a competitor for 
-                the Team Tech division and Director of the Collegiate Mentorship committee. I am also 
-                a member of the Association for Computing Machinery for Women (AMC-W) as the Marketing 
-                Officer, managing the social media and announcements for club events. Additionally, 
-                I am the Outreach Coordinator for Code the Gap, a club that aims to provide students 
-                with a computer science education starting young, by teaching introductory Python 
-                courses at local schools.</p>
-            <p>Aside from my leadership roles, I am involved with other student organizations. I am an
-                 active member of Engineers without Borders, Girls Who Code, and Women in Mathematics. 
-                 Alongside these clubs, I am also a mentor with CSE Mentor Connect which pairs mentors 
-                 with freshmen mentees in the College of Science and Engineering.</p>
-        </section>
+    <div id="splash">
+        <h1>Hi,
+            I'm Sophie</h1>
+        <button onclick="hideSplash()">click me!</button>
+    </div>
+    <div id="content" style="display: none;">
+        <header>
+            <h1>Sophie Reznik</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am a rising junior studying Computer Science with a minor in Information Technology 
+                    at the University of Minnesota-Twin Cities.</p>
+                <p>Currently, I am a member of the Society of Women Engineers (SWE) as a competitor for 
+                    the Team Tech division and Director of the Collegiate Mentorship committee. I am also 
+                    a member of the Association for Computing Machinery for Women (AMC-W) as the Marketing 
+                    Officer, managing the social media and announcements for club events. Additionally, 
+                    I am the Outreach Coordinator for Code the Gap, a club that aims to provide students 
+                    with a computer science education starting young, by teaching introductory Python 
+                    courses at local schools.</p>
+                <p>Aside from my leadership roles, I am involved with other student organizations. I am an
+                     active member of Engineers without Borders, Girls Who Code, and Women in Mathematics. 
+                     Alongside these clubs, I am also a mentor with CSE Mentor Connect which pairs mentors 
+                     with freshmen mentees in the College of Science and Engineering.</p>
+            </section>
 
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <p>Showcase your work here.</p>
-        </section>
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <p>Showcase your work here.</p>
+            </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: rezni024@umn.edu</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/sophiereznik/" target="_blank">https://www.linkedin.com/in/sophiereznik/</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Sophie Reznik. All rights reserved.</p>
-    </footer>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: rezni024@umn.edu</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/sophiereznik/" target="_blank">https://www.linkedin.com/in/sophiereznik/</a></p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Sophie Reznik. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        function hideSplash() {
+            document.getElementById('splash').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
