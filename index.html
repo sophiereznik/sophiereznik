@@ -5,62 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sophie Reznik - Personal Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="splash">
-        <h1>Hi,
-            I'm Sophie</h1>
-        <button onclick="hideSplash()">click me!</button>
+    <div class="logo-container">
+        <a href="#top"> 
+            <img src="images/logo-green.png" alt="Logo" id="logo">
+        </a>
+        <div class="doodles">
+            <img src="images/bear.png" class="doodle" alt="bear">
+            <img src="images/bow.png" class="doodle" alt="bow">
+            <img src="images/strawberry.png" class="doodle" alt="strawberry">
+            <img src="images/cherries.png" class="doodle" alt="cherries">
+            <img src="images/stars.png" class="doodle" alt="stars">
+            <img src="images/disco_ball.png" class="doodle" alt="disco ball">
+            <img src="images/tulips.png" class="doodle" alt="tulip bouquet">
+            <img src="images/ralphs_coffee.png" class="doodle" alt="ralph's coffee cup">
+            <img src="images/umn.png" class="doodle" alt="university of minnesota pennant">
+            <img src="images/street-sign.png" class="doodle" alt="lake shore drive street sign">
+        </div>
+        <div class="nav-bar">
+            <a href="#about" class="nav-item">
+                <img src="images/about-green.png" alt="About" class="about-icon">
+            </a>
+            <a href="#portfolio" class="nav-item">
+                <img src="images/portfolio-green.png" alt="Portfolio" class="portfolio-icon">
+            </a>
+            <a href="#contact" class="nav-item">
+                <img src="images/contact-green.png" alt="Contact" class="contact-icon">
+            </a>
+        </div>
     </div>
-    <div id="content" style="display: none;">
-        <header>
-            <h1>Sophie Reznik</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="about">
-                <h2>About Me</h2>
-                <p>I am a rising junior studying Computer Science with a minor in Information Technology 
-                    at the University of Minnesota-Twin Cities.</p>
-                <p>Currently, I am a member of the Society of Women Engineers (SWE) as a competitor for 
-                    the Team Tech division and Director of the Collegiate Mentorship committee. I am also 
-                    a member of the Association for Computing Machinery for Women (AMC-W) as the Marketing 
-                    Officer, managing the social media and announcements for club events. Additionally, 
-                    I am the Outreach Coordinator for Code the Gap, a club that aims to provide students 
-                    with a computer science education starting young, by teaching introductory Python 
-                    courses at local schools.</p>
-                <p>Aside from my leadership roles, I am involved with other student organizations. I am an
-                     active member of Engineers without Borders, Girls Who Code, and Women in Mathematics. 
-                     Alongside these clubs, I am also a mentor with CSE Mentor Connect which pairs mentors 
-                     with freshmen mentees in the College of Science and Engineering.</p>
-            </section>
 
-            <section id="portfolio">
-                <h2>Portfolio</h2>
-                <p>Showcase your work here.</p>
-            </section>
+    <div id="content">
+        <section id="about">
+            <!-- About section content -->
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Hello!</h2>
+                    <p>I'm Sophie, a computer science student passionate about software development and technology. I enjoy working on projects that challenge me and allow me to explore different areas of tech.</p>
+                    <p>With experience in mobile & web development, machine learning, and UI/UX design, I'm always eager to learn and grow.</p>
+                    <p>I am a rising junior at the University of Minnesota-Twin Cities, but I am from the Chicago area!</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/sophie.png" alt="Sophie Reznik">
+                </div>
+            </div>
+        </section>
 
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>Email: rezni024@umn.edu</p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/sophiereznik/" target="_blank">https://www.linkedin.com/in/sophiereznik/</a></p>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2024 Sophie Reznik. All rights reserved.</p>
-        </footer>
+        <section id="portfolio">
+            <!-- Portfolio section content -->
+            <h2>Portfolio</h2>
+            <div class="portfolio-item">
+                <h3>MyFarm: virtual farm management system</h3>
+                <p>Frontend: HTML, CSS, JavaScript</p>
+                <p>Backend: Django</p>
+                <a href="myfarm.html">Learn more</a>
+            </div>
+            <div class="portfolio-item">
+                <h3>Nutrient Deficiencies in Wheat</h3>
+                <p>Tools: Teachable Machine</p>
+                <p>Data Analysis: Python, Tableau</p>
+                <a href="wheat.html">Learn more</a>
+            </div>
+            <div class="portfolio-item">
+                <h3>
+                    Analyzing Acuity as a Tool for Value-Based Care</h3>
+                <p>Tools: MIMIC-IV dataset, Google Colab</p>
+                <p>Data Analysis: Python</p>
+                <a href="datathon.html">Learn more</a>
+            </div>
+            <div>
+                <p>For more of my work, visit my <a href="https://github.com/sophiereznik" target="_blank">GitHub profile</a>.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <!-- Contact section content -->
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, please feel free to reach out through the following methods:</p>
+            <ul>
+                <li>Email: <a href="mailto:rezni024@umn.edu">rezni024@umn.edu</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/sophiereznik" target="_blank">linkedin.com/in/sophiereznik</a></li>
+            </ul>
+        </section>
     </div>
-    <script>
-        function hideSplash() {
-            document.getElementById('splash').style.display = 'none';
-            document.getElementById('content').style.display = 'block';
-        }
-    </script>
+    <footer>
+        <p>&copy; 2024 Sophie Reznik. All rights reserved.</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+document.addEventListener('scroll', function() {
+    const logo = document.getElementById('logo');
+    const doodles = document.querySelectorAll('.doodle');
+    const logoContainer = document.querySelector('.logo-container');
+    const navBar = document.querySelector('.nav-bar');
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 100) {
+        logo.style.width = '125px'; // Enlarge the logo
+        doodles.forEach(doodle => {
+            doodle.classList.add('dispersed'); // Disperse doodles to the sides and fade out
+        });
+    } else {
+        logo.style.width = '175px'; // Default size
+        doodles.forEach(doodle => {
+            doodle.classList.remove('dispersed'); // Reset doodles
+        });
+    }
+
+    if (scrollPosition > 300) {
+        logoContainer.classList.add('sticky'); // Stick the logo to the top
+        logo.classList.add('shrunk-logo'); // Shrink the logo at the top
+        navBar.classList.add('show'); // Show the navigation bar
+        doodles.forEach(doodle => {
+            doodle.classList.add('hidden'); // Hide doodles (they should already be faded out)
+        });
+    } else {
+        logoContainer.classList.remove('sticky');
+        logo.classList.remove('shrunk-logo');
+        navBar.classList.remove('show'); // Hide the navigation bar
+        doodles.forEach(doodle => {
+            doodle.classList.remove('hidden'); // Show doodles
+        });
+    }
+});
