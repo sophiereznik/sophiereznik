@@ -1,1 +1,78 @@
-<p>Developed the MyFarm application as a virtual farm management system, with Sensor Data, Satellite Images, Farm View, and Crop Wizard chat pages.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFarm: Learn More</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body id="myfarm">
+    <!-- Update to use the same class name as index.html -->
+    <div class="logo-container sticky">
+        <a href="index.html">
+            <img src="images/logo-green.png" alt="Logo" id="logo" class="shrunk-logo">
+        </a>
+        <div class="nav-bar show">
+            <a href="index.html#about" class="nav-item">
+                <img src="images/about-green.png" alt="About" class="about-icon">
+            </a>
+            <a href="index.html#portfolio" class="nav-item">
+                <img src="images/portfolio-green.png" alt="Portfolio" class="portfolio-icon">
+            </a>
+            <a href="index.html#contact" class="nav-item">
+                <img src="images/contact-green.png" alt="Contact" class="contact-icon">
+            </a>
+        </div>
+    </div>
+
+    <div id="content">
+        <section id="learn-more">
+            <h2>MyFarm: Virtual Farm Management System</h2>
+            <h3>Overview:</h3>
+            <p>MyFarm is a web-based platform that helps farmers monitor and manage their crops effectively. It integrates various technologies to provide a comprehensive view of farm conditions and supports decision-making for better crop management.</p>
+            <p>MyFarm has 4 main pages; Sensor Data, Satellite Images, Farm View, and Crop Wizard chat. Each page contains different elements collected from the farm either by field deployed robots or other monitors.</p>
+            <section id="myfarm-images">
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="myfarm_images/myfarm.png" alt="MyFarm website splash page.">
+                    </div>
+                    <div class="image-item">
+                        <img src="myfarm_images/home.png" alt="MyFarm website home page.">
+                    </div>
+                    <div class="image-item">
+                        <img src="myfarm_images/farmview.png" alt="MyFarm website Farm View page.">
+                    </div>
+                    <div class="image-item">
+                        <img src="myfarm_images/cropwizard.png" alt="MyFarm website CropWizard chat.">
+                    </div>
+                </div>
+            </section>
+            <h3>Technologies Used:</h3>
+            <ul>
+                <li>Frontend: HTML, CSS, JavaScript</li>
+                <li>Backend: Django</li>
+                <li>API Integration: Flask</li>
+            </ul>
+            <h3>Affiliation:</h3>
+            <p>This project was part of the University of Illinois Urbana-Champaign Center for Digital Agriculture REU program. It is part of the UIUC Precision Agriculture team, under Professor Vikram Adve.</p>
+            <h3>Poster:</h3>
+            <div class="poster-section">
+                <img src="myfarm_images/poster.png" alt="REU Poster" class="poster-thumbnail">
+            </div>
+            <!-- <a href="myfarm_images/myfarm-poster-large.jpg" target="_blank">
+                    <img src="myfarm_images/myfarm-poster-thumbnail.jpg" alt="Poster preview of MyFarm project" class="poster-thumbnail">
+                </a> -->
+
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sophie Reznik. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -17,9 +17,31 @@ body {
     transition: transform 0.5s ease, top 0.5s ease;
 }
 
+.logo-container2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    transition: transform 0.5s ease, top 0.5s ease;
+}
+
 #logo {
     width: 175px;
     transition: width 0.5s ease;
+}
+
+#myfarm #logo {
+    width: 120px;
+}
+
+#nutrient-deficiencies #logo {
+    width: 120px;
+}
+
+#acuity #logo {
+    width: 120px;
 }
 
 .doodles {
@@ -55,6 +77,18 @@ body {
 
 #content {
     padding: 100vh 20px 20px; /* Start content after the animation */
+}
+
+#myfarm #content {
+    padding: 20px;
+}
+
+#nutrient-deficiencies #content {
+    padding: 20px;
+}
+
+#acuity #content {
+    padding: 20px;
 }
 
 .sticky {
@@ -232,10 +266,57 @@ footer {
     bottom: 0;
     width: 100%; /* Stretch footer across the entire width */
     border-top: 1px solid #ddd; /* Optional: add a top border */
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visibility */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
 }
 
 footer p {
     margin: 0; /* Remove default margin */
     font-size: 0.9em; /* Slightly smaller text size */
+}
+
+#myfarm_images {
+    margin: 40px 0; /* Add spacing around the section */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between images */
+    max-width: 800px; /* Set a max width */
+    margin: 0 auto; /* Center the grid */
+}
+
+.image-item img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a slight shadow */
+}
+
+.poster-section {
+    text-align: center; /* Center the poster */
+    margin: 20px 0; /* Add spacing around the poster section */
+}
+
+.poster-thumbnail {
+    width: 100%; /* Make the image responsive */
+    max-width: 400px; /* Set a maximum width for the thumbnail */
+    cursor: pointer; /* Change cursor to pointer to indicate clickability */
+}
+
+/* Style for the presentation section */
+.presentation-section {
+    text-align: center; /* Center-align the presentation link */
+    margin: 20px 0; /* Add spacing around the presentation section */
+}
+
+/* Style for the thumbnail */
+.presentation-thumbnail {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    cursor: pointer; /* Change cursor to pointer to indicate clickability */
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+.presentation-thumbnail:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
