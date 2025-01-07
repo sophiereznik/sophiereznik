@@ -3,8 +3,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const logo = document.getElementById('logo');
     const navBar = document.querySelector('.nav-bar');
     
-    // Main page animation
-    if (window.location.pathname === '/index.html') {
+    // Check if we're on portfolio learn more pages
+    if (window.location.pathname === '/one-heart.html' || window.location.pathname === '/myfarm.html' || window.location.pathname === '/nutrient-deficiencies-in-wheat.html' || window.location.pathname === '/analyzing-acuity.html') {
+        // Skip animation
+        logoContainer.classList.add('sticky');
+        logo.classList.add('shrunk-logo');
+        navBar.classList.add('show');
+    } else if (window.location.pathname === '/index.html') {
+        // Animation for pages other than myfarm.html
         document.addEventListener('scroll', function() {
             const doodles = document.querySelectorAll('.doodle');
             const scrollPosition = window.scrollY;
