@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
         logoContainer.classList.add('sticky');
         logo.classList.add('shrunk-logo');
         navBar.classList.add('show');
-    } else if (window.location.pathname === '/index.html') {
-        // Animation for pages other than myfarm.html
+    } else if (window.location.pathname.endsWith('/index.html')) {
+        // Animation for main page
         document.addEventListener('scroll', function() {
             const doodles = document.querySelectorAll('.doodle');
             const scrollPosition = window.scrollY;
