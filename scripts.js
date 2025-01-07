@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navBar = document.querySelector('.nav-bar');
     
     // Check if we're on portfolio learn more pages
-    if (window.location.pathname === '/one-heart.html' || window.location.pathname === '/myfarm.html' || window.location.pathname === '/nutrient-deficiencies-in-wheat.html' || window.location.pathname === '/analyzing-acuity.html') {
+    if (window.location.pathname.endsWith('/one-heart.html') || window.location.pathname.endsWith('/myfarm.html') || window.location.pathname.endsWith('/nutrient-deficiencies-in-wheat.html') || window.location.pathname.endsWith('/analyzing-acuity.html')) {
         // Skip animation
         logoContainer.classList.add('sticky');
         logo.classList.add('shrunk-logo');
