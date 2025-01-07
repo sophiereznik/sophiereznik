@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         logoContainer.classList.add('sticky');
         logo.classList.add('shrunk-logo');
         navBar.classList.add('show');
-    } else if (window.location.pathname.endsWith('/index.html')) {
+    } else {
         // Animation for main page
         document.addEventListener('scroll', function() {
             const doodles = document.querySelectorAll('.doodle');
